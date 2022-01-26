@@ -1,0 +1,241 @@
+local exec = 
+
+local itoangoten = Instance.new("ScreenGui")
+local oten = Instance.new("ImageLabel")
+local Frame = Instance.new("ImageLabel")
+local Stuff = Instance.new("TextLabel")
+local Blitzy = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Ashley = Instance.new("TextButton")
+local seller = Instance.new("TextLabel")
+local amount = Instance.new("TextLabel")
+
+--Properties:
+
+itoangoten.Name = "itoangoten"
+itoangoten.Parent = game.CoreGui
+
+oten.Name = "oten"
+oten.Parent = itoangoten
+oten.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+oten.BackgroundTransparency = 1.000
+oten.Position = UDim2.new(0.336910665, 0, 0.331085891, 0)
+oten.Size = UDim2.new(0, 3, 0, 0)
+oten.Image = "rbxassetid://3570695787"
+oten.ImageColor3 = Color3.fromRGB(44, 48, 55)
+oten.ScaleType = Enum.ScaleType.Slice
+oten.SliceCenter = Rect.new(100, 100, 100, 100)
+oten.SliceScale = 0.120
+
+Frame.Name = "Frame"
+Frame.Parent = oten
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.0209999997, 0, 0.181999996, 0)
+Frame.Size = UDim2.new(0, 3, 0, 0)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(33, 36, 42)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.040
+
+Stuff.Name = "Stuff"
+Stuff.Parent = Frame
+Stuff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stuff.BackgroundTransparency = 1.000
+Stuff.Position = UDim2.new(0.522673011, 0, -0.171296299, 0)
+Stuff.Size = UDim2.new(0, 200, 0, 24)
+Stuff.Font = Enum.Font.Nunito
+Stuff.Text = ""
+Stuff.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stuff.TextSize = 23.000
+
+Blitzy.Name = "Blitzy"
+Blitzy.Parent = oten
+Blitzy.BackgroundColor3 = Color3.fromRGB(18, 20, 24)
+Blitzy.BackgroundTransparency = 1.000
+Blitzy.BorderSizePixel = 0
+Blitzy.Position = UDim2.new(0.0434782617, 0, 0.218181819, 0)
+Blitzy.Size = UDim2.new(0, 93, 0, 31)
+Blitzy.Font = Enum.Font.Ubuntu
+Blitzy.Text = "Blitzy"
+Blitzy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blitzy.TextSize = 25.000
+Blitzy.TextTransparency = 1.000
+
+TextLabel.Parent = oten
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0205949657, 0, 0.0290909074, 0)
+TextLabel.Size = UDim2.new(0, 174, 0, 32)
+TextLabel.Font = Enum.Font.Sarpanch
+TextLabel.Text = "ALT CONTROL"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 35.000
+TextLabel.TextTransparency = 1.000
+
+Ashley.Name = "Ashley"
+Ashley.Parent = oten
+Ashley.BackgroundColor3 = Color3.fromRGB(18, 20, 24)
+Ashley.BackgroundTransparency = 1.000
+Ashley.BorderSizePixel = 0
+Ashley.Position = UDim2.new(0.274599522, 0, 0.218181819, 0)
+Ashley.Size = UDim2.new(0, 93, 0, 31)
+Ashley.Font = Enum.Font.Ubuntu
+Ashley.Text = "Ashley"
+Ashley.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ashley.TextSize = 25.000
+Ashley.TextTransparency = 1.000
+
+seller.Name = "seller"
+seller.Parent = itoangoten
+seller.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+seller.BackgroundTransparency = 1.000
+seller.Position = UDim2.new(0, 0, 0.0662576705, 0)
+seller.Size = UDim2.new(0, 200, 0, 24)
+seller.Font = Enum.Font.SourceSans
+seller.Text = "N/A"
+seller.TextColor3 = Color3.fromRGB(247, 241, 141)
+seller.TextSize = 27.000
+seller.TextXAlignment = Enum.TextXAlignment.Left
+
+amount.Name = "amount"
+amount.Parent = itoangoten
+amount.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+amount.BackgroundTransparency = 1.000
+amount.Position = UDim2.new(0, 0, 0.0957055241, 0)
+amount.Size = UDim2.new(0, 200, 0, 24)
+amount.Font = Enum.Font.SourceSans
+amount.Text = "no cash yet ez"
+amount.TextColor3 = Color3.fromRGB(52, 142, 64)
+amount.TextSize = 27.000
+amount.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function UDRHV_fake_script() -- Stuff.LocalScript 
+	local script = Instance.new('LocalScript', Stuff)
+
+	wait(6)
+	while true do
+		wait()
+		script.Parent.TextTransparency = 1
+		for i = 1,10 do
+			wait()
+			script.Parent.TextTransparency = script.Parent.TextTransparency - 0.1
+			script.Parent.Text = "ito ang best script"
+		end
+		wait(2)
+		for i = 1,10 do
+			wait()
+			script.Parent.TextTransparency = script.Parent.TextTransparency + 0.1
+		end
+		wait(0.5)
+		for i = 1,10 do
+			wait()
+			script.Parent.TextTransparency = script.Parent.TextTransparency - 0.1
+			script.Parent.Text = "blitz is scripter 🤓"
+		end
+		wait(2)
+		for i = 1,10 do
+			wait()
+			script.Parent.TextTransparency = script.Parent.TextTransparency + 0.1
+		end
+		for i = 1,10 do
+			wait()
+			script.Parent.TextTransparency = script.Parent.TextTransparency - 0.1
+			script.Parent.Text = "sumbagay"
+		end
+		wait(0.5)
+		for i = 1,10 do
+			wait()
+			script.Parent.TextTransparency = script.Parent.TextTransparency + 0.1
+		end
+		wait(2)
+	end
+end
+coroutine.wrap(UDRHV_fake_script)()
+local function JOETRR_fake_script() -- Blitzy.Script 
+	local script = Instance.new('Script', Blitzy)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		getgenv().Seller = "K1ngBlitzy"
+		getgenv().altMsg = "blitzy pushin🅿"
+		seller.Text = "KingBlitzy"
+    seller.TextColor3 = Color3.fromRGB(229, 173, 200) 
+		oten:Destroy()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blitzylol/oten/main/alt%20control%20old"))()
+	end)
+end
+coroutine.wrap(JOETRR_fake_script)()
+local function IKUO_fake_script() -- oten.d=drag 
+	local script = Instance.new('LocalScript', oten)
+
+	local a=game:GetService("UserInputService")function drag(b)dragToggle=nil dragSpeed=0.23 dragInput=nil dragStart=nil dragPos=nil function updateInput(a)Delta=a.Position-dragStart Position=UDim2.new(startPos.X.Scale,startPos.X.Offset+Delta.X,startPos.Y.Scale,startPos.Y.Offset+Delta.Y)game:GetService("TweenService"):Create(b,TweenInfo.new(0.25),{Position=Position}):Play()end b.InputBegan:Connect(function(c)if(c.UserInputType==Enum.UserInputType.MouseButton1 or c.UserInputType==Enum.UserInputType.Touch)and a:GetFocusedTextBox()==nil then dragToggle=true dragStart=c.Position startPos=b.Position c.Changed:Connect(function()if c.UserInputState==Enum.UserInputState.End then dragToggle=false end end)end end)b.InputChanged:Connect(function(a)if a.UserInputType==Enum.UserInputType.MouseMovement or a.UserInputType==Enum.UserInputType.Touch then dragInput=a end end)game:GetService("UserInputService").InputChanged:Connect(function(a)if a==dragInput and dragToggle then updateInput(a)end end)end drag(script.Parent)
+end
+coroutine.wrap(IKUO_fake_script)()
+local function MPZVEG_fake_script() -- oten.tweens 
+	local script = Instance.new('LocalScript', oten)
+
+	wait(3)
+	
+	local gui = script.Parent
+	local gui2 = script.Parent.Frame
+	gui:TweenPosition(UDim2.new(0.337, 0,0.331, 0), "Out", "Quint", .9)
+	gui:TweenSize(UDim2.new(0, 437,0, 275), "Out", "Quint", .9)
+	gui2:TweenPosition(UDim2.new(0.021, 0,0.182, 0), "Out", "Quint", .9)
+	gui2:TweenSize(UDim2.new(0, 419,0, 216), "Out", "Quint", .9)
+	
+	wait(1)
+	local TweenService = game:GetService("TweenService")
+	local time = 1 --this will tell you how much it would take for the tween to finish
+	
+	local FadeIn = TweenService:Create(script.Parent.TextLabel, TweenInfo.new(time), {TextTransparency = 0})
+	local FadeInb = TweenService:Create(script.Parent.Blitzy, TweenInfo.new(time), {BackgroundTransparency = 0})
+	local FadeIna = TweenService:Create(script.Parent.Ashley, TweenInfo.new(time), {BackgroundTransparency = 0})
+	local FadeInbt = TweenService:Create(script.Parent.Blitzy, TweenInfo.new(time), {TextTransparency = 0})
+	local FadeInat = TweenService:Create(script.Parent.Ashley, TweenInfo.new(time), {TextTransparency = 0})
+	FadeIn:Play()
+	wait(1.3)
+	FadeInb:Play()
+	FadeIna:Play()
+	FadeInbt:Play()
+	FadeInat:Play()
+	
+	
+end
+coroutine.wrap(MPZVEG_fake_script)()
+local function LTCASSV_fake_script() -- Ashley.Script 
+	local script = Instance.new('Script', Ashley)
+
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		getgenv().Seller = "A5HLIIN"
+		getgenv().altMsg = "blitzy pushin🅿"
+		seller.Text = "A5HLIIN"
+        seller.TextColor3 = Color3.fromRGB(207, 226, 247)
+		oten:Destroy()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blitzylol/oten/main/alt%20control%20old"))()
+	end)
+end
+coroutine.wrap(LTCASSV_fake_script)()
+local function SNIB_fake_script() -- amount.Script 
+	local script = Instance.new('Script', amount)
+
+	function comma_value(n) -- credit http://richard.warburton.it
+		local left,num,right = string.match(n,'^([^%d]*%d)(%d*)(.-)$')
+		return left..(num:reverse():gsub('(%d%d%d)','%1,'):reverse())..right
+	end
+    repeat wait() until game:GetService("Players").LocalPlayer
+	local player = game:GetService("Players").LocalPlayer
+    local cr = player.DataFolder.Currency.Value
+	local amout = (comma_value(cr))
+    
+	while wait() do 
+        local cr = player.DataFolder.Currency.Value
+        local amout = (comma_value(cr))
+		script.Parent.Text = amout
+	end
+end
+coroutine.wrap(SNIB_fake_script)()
