@@ -229,7 +229,7 @@ local function SNIB_fake_script() -- amount.Script
 	end
 	
 	
-    repeat wait() until game:GetService("Players").LocalPlayer
+    repeat wait() until game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
 	local player = game:GetService("Players").LocalPlayer
     local cr = player.DataFolder.Currency.Value
 	local amout = (comma_value(cr))
