@@ -228,7 +228,7 @@ local function SNIB_fake_script() -- amount.Script
 		return left..(num:reverse():gsub('(%d%d%d)','%1,'):reverse())..right
 	end
 	
-	wait(10)
+	
     repeat wait() until game:GetService("Players").LocalPlayer
 	local player = game:GetService("Players").LocalPlayer
     local cr = player.DataFolder.Currency.Value
