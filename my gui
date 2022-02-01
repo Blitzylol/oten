@@ -1,4 +1,7 @@
-local exec = 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local itoangoten = Instance.new("ScreenGui")
 local oten = Instance.new("ImageLabel")
@@ -106,8 +109,8 @@ amount.BackgroundTransparency = 1.000
 amount.Position = UDim2.new(0, 0, 0.0957055241, 0)
 amount.Size = UDim2.new(0, 200, 0, 24)
 amount.Font = Enum.Font.SourceSans
-amount.Text = "no cash yet ez"
-amount.TextColor3 = Color3.fromRGB(52, 142, 64)
+amount.Text = "5000"
+amount.TextColor3 = Color3.fromRGB(177, 229, 166)
 amount.TextSize = 27.000
 amount.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -162,10 +165,11 @@ local function JOETRR_fake_script() -- Blitzy.Script
 	button.MouseButton1Click:Connect(function()
 		getgenv().Seller = "K1ngBlitzy"
 		getgenv().altMsg = "blitzy pushin🅿"
+		getgenv().prefix = "."
 		seller.Text = "KingBlitzy"
-    seller.TextColor3 = Color3.fromRGB(229, 173, 200) 
+        seller.TextColor3 = Color3.fromRGB(229, 173, 200) 
 		oten:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blitzylol/oten/main/alt%20control%20old"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/Seller-Tools/main/Seller%20Tools%3A%20Script"))()
 	end)
 end
 coroutine.wrap(JOETRR_fake_script)()
@@ -213,10 +217,11 @@ local function LTCASSV_fake_script() -- Ashley.Script
 	button.MouseButton1Click:Connect(function()
 		getgenv().Seller = "A5HLIIN"
 		getgenv().altMsg = "blitzy pushin🅿"
+		getgenv().prefix = "."
 		seller.Text = "A5HLIIN"
         seller.TextColor3 = Color3.fromRGB(207, 226, 247)
 		oten:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blitzylol/oten/main/alt%20control%20old"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/Seller-Tools/main/Seller%20Tools%3A%20Script"))()
 	end)
 end
 coroutine.wrap(LTCASSV_fake_script)()
@@ -227,14 +232,12 @@ local function SNIB_fake_script() -- amount.Script
 		local left,num,right = string.match(n,'^([^%d]*%d)(%d*)(.-)$')
 		return left..(num:reverse():gsub('(%d%d%d)','%1,'):reverse())..right
 	end
-	
-	
-    repeat wait() until game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
+    repeat wait() until game:GetService("Players").LocalPlayer
 	local player = game:GetService("Players").LocalPlayer
     local cr = player.DataFolder.Currency.Value
 	local amout = (comma_value(cr))
     
-	while wait() do 
+	while wait(0.2) do 
         local cr = player.DataFolder.Currency.Value
         local amout = (comma_value(cr))
 		script.Parent.Text = amout
