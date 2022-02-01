@@ -165,11 +165,10 @@ local function JOETRR_fake_script() -- Blitzy.Script
 	button.MouseButton1Click:Connect(function()
 		getgenv().Seller = "K1ngBlitzy"
 		getgenv().altMsg = "blitzy pushin🅿"
-		getgenv().prefix = "."
 		seller.Text = "KingBlitzy"
         seller.TextColor3 = Color3.fromRGB(229, 173, 200) 
 		oten:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/Seller-Tools/main/Seller%20Tools%3A%20Script"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blitzylol/oten/main/alt%20control%20old"))()
 	end)
 end
 coroutine.wrap(JOETRR_fake_script)()
@@ -217,11 +216,10 @@ local function LTCASSV_fake_script() -- Ashley.Script
 	button.MouseButton1Click:Connect(function()
 		getgenv().Seller = "A5HLIIN"
 		getgenv().altMsg = "blitzy pushin🅿"
-		getgenv().prefix = "."
 		seller.Text = "A5HLIIN"
         seller.TextColor3 = Color3.fromRGB(207, 226, 247)
 		oten:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/Seller-Tools/main/Seller%20Tools%3A%20Script"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blitzylol/oten/main/alt%20control%20old"))()
 	end)
 end
 coroutine.wrap(LTCASSV_fake_script)()
